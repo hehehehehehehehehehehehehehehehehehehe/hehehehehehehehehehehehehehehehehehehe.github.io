@@ -2,41 +2,34 @@
 <html lang="en">
 
 <head>
+    <!-- <meta property="og:title" content="Texas Roleplay">
+    <meta property="og:site_name" content="Texas Roleplay | Home">
+    <meta property="og:url" content="https://texas-rp.github.io/">
+    <meta property="og:description" content="Texas Roleplay | Official website">
+    <meta property="og:type" content="website"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>laser Inc.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+            user-scalable=0">
+    <link rel="icon" href="./src/logo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./src/css/all.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Unknown Games</title>
 </head>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
-
-    body {
-        background-color: bisque;
-    }
-
-    header {
-        display: flex;
-        flex-flow: wrap;
-        background-color: gray;
-        height: 10vh;
-        justify-content: center;
-        align-items: center;
-    }
-
-    a.link {
-        color: white;
-        text-decoration: none;
-        font-size: 200%;
-    }
 </style>
 
 <body>
-    <header>
-        <a class="link" href="./home">Home</a>
-    </header>
+    <div class="header">
+        <div class="logo">
+            <a>Unknown Games</a>
+        </div>
+        <div class="header-right">
+            <a href="./home">Home</a>
+        </div>
+    </div>
 </body>
+<div onclick="closeNav()" id="sidenav-back" class="sidenav-back hidden"></div>
+<script src="script.js"></script>
 
 </html>
