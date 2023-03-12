@@ -13,3 +13,44 @@ function click() {
   moneyOutput = moneyOutput.toFixed(2);
   console.log(moneyOutput);
 }
+
+//cursor
+/*
+
+    var cursor = document.getElementById("cursor")
+    var clicked = false;
+
+    document.addEventListener('mousedown', function () {
+        clicked = true;
+        cursor.classList.add('clicked');
+    });
+
+    document.addEventListener('mouseup', function () {
+        clicked = false;
+        cursor.classList.remove('clicked');
+    });
+
+    document.addEventListener('mousemove', function (event) {
+        var x = event.clientX;
+        var y = event.clientY;
+
+        cursor.style.top = y + 'px';
+        cursor.style.left = x + 'px';
+
+        if (clicked) {
+            cursor.classList.add('clicked');
+        } else {
+            cursor.classList.remove('clicked');
+        }
+    });
+
+    document.getElementById('clicker').forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+            cursor.classList.add('hover');
+        });
+
+        element.addEventListener('mouseout', function () {
+            cursor.classList.remove('hover');
+        });
+    });
+    */
