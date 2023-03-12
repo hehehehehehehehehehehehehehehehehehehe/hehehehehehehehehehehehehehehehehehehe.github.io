@@ -14,7 +14,7 @@
     }
 
     body {
-        background-color: bisque;
+        background-color: var(--bg-color);
     }
 
     header {
@@ -22,20 +22,31 @@
         flex-flow: wrap;
         background-color: gray;
         height: 10vh;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
     }
 
     a.link {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(138, 138, 138);
+        margin-right: 50px;
         color: white;
         text-decoration: none;
         font-size: 200%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    a.link:hover {
+        background-color: rgb(116, 116, 116);
     }
 </style>
 
 <body>
     <header>
         <a class="link" href="./home">Home</a>
+        <a class="link" href="./home">Games</a>
+        <a class="link" href="./home">Help</a>
     </header>
 </body>
 
