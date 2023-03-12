@@ -1,15 +1,40 @@
+@import url("../../src/main.css");
+
 body {
 
-    background-color: rgb(31, 31, 31);
+    background-color: var(--bg-color)
 }
 
-.matchfield {
+.canvas {
 
     transform: translate(-50%, -50%);
     position: absolute;
     left: 50%;
     top: 50%;
-    background-color: aliceblue;
-    height: 100px;
-    width: 60px;
+    background-image: url(./pics/FootballField.png);
+    background-size: cover;
+    image-rendering: pixelated;
+    border-radius: 5px;
+}
+
+.player1 {
+
+    background-color: rgb(105, 187, 187);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 280px;
+    left: 120px;
+    border-radius: 5px;
+}
+
+.player2 {
+
+    background-color: rgb(185, 73, 180);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 280px;
+    left: 840px;
+    border-radius: 5px;
 }
