@@ -29,6 +29,7 @@ body {
 
 #clicker:hover{
     zoom: 5.1;
+    cursor: pointer;
 }
 
 #clicker:active{
