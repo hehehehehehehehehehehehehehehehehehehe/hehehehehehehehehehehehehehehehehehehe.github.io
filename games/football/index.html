@@ -21,7 +21,7 @@
             <a href="../../">Unknown Games</a>
         </div>
         <div class="header-right">
-            <a href="#help">Help</a>
+            <a class="help" onclick="help()">Help</a>
         </div>
     </div>
     <canvas id="canvas" class="canvas">
@@ -37,4 +37,14 @@
 
 </html>
 
-<script src="./script.js"></script>
+<div id="help" class="hidden">
+    <p>Help is comming soon.</p>
+</div>
+<script src="script.js"></script>
+
+<!-- HELP TOOLTIP -->
+<script>
+    function help() {
+        document.getElementById('help').classList.toggle('hidden');
+    }
+</script>
