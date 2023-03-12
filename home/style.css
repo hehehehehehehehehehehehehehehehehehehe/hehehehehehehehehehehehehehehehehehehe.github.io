@@ -64,7 +64,7 @@
     color: #808285;
     margin-bottom: -10px;  
   }
-  
+
   .grid .btn {
     margin-top: 20px;
     background-color: aqua;
@@ -73,10 +73,10 @@
       color: #000;
       font-size: 15px;
       line-height: 50px;
-      padding: 20px 10%;
-    font-family: 'Roboto', sans-serif;
+      padding: 15px 10%;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
   }
 
   .btn:after {
@@ -84,7 +84,7 @@
   }
   
   .btn:hover {
-    background: lime;
+    background: rgb(59, 255, 59);
     transition: 0.5s;
   }
   
@@ -98,7 +98,6 @@
     text-align: center;
     padding: 0px;
     margin-top: -10px;
-    font-family: monospace;
     letter-spacing: 10px;
   }
 
