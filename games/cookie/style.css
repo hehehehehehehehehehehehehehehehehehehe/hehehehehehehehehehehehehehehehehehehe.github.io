@@ -14,3 +14,23 @@ body {
     height: 600px;
     background-color: rgb(80, 165, 165);
 }
+
+#clicker {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    image-rendering: pixelated;
+    zoom: 5;
+    display: block;
+    margin: 0 auto;
+}
+
+#clicker:hover{
+    zoom: 5.1;
+    cursor: pointer;
+}
+
+#clicker:active{
+    zoom: 5.3;
+}

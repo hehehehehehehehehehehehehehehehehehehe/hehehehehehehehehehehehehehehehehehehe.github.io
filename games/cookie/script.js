@@ -1,3 +1,4 @@
+// automat
 const maxMoney = 50; //in cent
 
 document.getElementById("clicker").addEventListener("click", click);
