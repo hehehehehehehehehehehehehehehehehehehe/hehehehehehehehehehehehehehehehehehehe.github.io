@@ -95,6 +95,7 @@ body {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    image-rendering: pixelated;
     transition: 0s;
     overflow: hidden;
     user-select: none;
