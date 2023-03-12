@@ -20,13 +20,13 @@
             <a href="../../">Unknown Games</a>
         </div>
         <div class="header-right">
-            <a href="#help">Help</a>
+            <a class="help" onclick="help()">Help</a>
         </div>
     </div>
 
     <div class="matchfield">
         <p id="moneyValueDisplay"></p>
-        <img draggable="false" id="clicker" src="pics/automat.png">
+        <img draggable="false" id="clicker" src="pics/candy_vending_machine.png">
     </div>
     <!-- <img id="cursor" src="pics/hand.png"> -->
 </body>
@@ -35,4 +35,13 @@
 <script src="script.js"></script>
 
 
-</html>
+<div id="help" class="hidden">
+    <p>Help is comming soon.</p>
+</div>
+
+<!-- HELP TOOLTIP -->
+<script>
+    function help() {
+        document.getElementById('help').classList.toggle('hidden');
+    }
+</script>
