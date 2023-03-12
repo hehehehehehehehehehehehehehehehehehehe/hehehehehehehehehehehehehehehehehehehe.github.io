@@ -77,3 +77,35 @@
     transition: 1s;
     display: none;
 }
+
+
+html {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(53, 62, 82);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0s;
+    overflow: hidden;
+    user-select: none;
+}
+
+.corner-logo {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 5px;
+    aspect-ratio: 1;
+    width: 100px;
+    bottom: 5px;
+    max-width: 25%;
+}
