@@ -1,0 +1,107 @@
+@import url(../src/main.css);
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(128, 128, 128, 0.2);
+  transition: 1s;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  transition: 1s;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    background-color: rgb(60, 63, 70);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 1000px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+  
+  body {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    justify-content: center;
+    display: flex;
+    zoom: 1.5;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 20px;
+  
+  }
+  
+  .grid > article {
+    border: 1px solid black;
+    padding: 0 0;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .grid .text {
+    text-align: center;
+    padding: 10px 20px 20px 30px;
+    color: #808285;
+    margin-bottom: -10px;  
+  }
+  
+  .grid .btn {
+    margin-top: 20px;
+    background-color: aqua;
+      border: 0;
+      border-radius: 5px;
+      color: #000;
+      font-size: 15px;
+      line-height: 50px;
+      padding: 20px 10%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .btn:after {
+    content: "Click to play"
+  }
+  
+  .btn:hover {
+    background: lime;
+    transition: 0.5s;
+  }
+  
+  h3{ 
+    color: #000;
+    text-align: center;
+  }
+
+  h1.title {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin-top: -10px;
+    font-family: monospace;
+    letter-spacing: 10px;
+  }
+
+  h1.title:after {
+    content: "Unknown Games • Library";
+  }
