@@ -1,10 +1,6 @@
 @import url(../../src/main.css);
 @import url(../header.css);
 
-*{
-    cursor: none;
-}
-
 body {
     background-color: var(--bg-color);
 }
