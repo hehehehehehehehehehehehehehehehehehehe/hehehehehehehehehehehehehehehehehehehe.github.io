@@ -1,0 +1,11 @@
+/* HELP TOOLTIP */
+
+.helpTextFootball:after {
+    content: "Help is comming soon.";
+}
+
+.helpTextCookie:after {
+    content: "Help is comming soon.";
+}
+
+/* ------------- */
