@@ -30,11 +30,6 @@ body {
     margin: 0 auto;
 }
 
-#clicker:hover{
-    zoom: 5.1;
-    cursor: pointer;
-}
-
 #clicker:active{
     zoom: 5.3;
 }
@@ -53,6 +48,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
+} 
+
+.hand:hover {
+    zoom: 5.1;
 }
 
 .clicked {
@@ -82,4 +81,22 @@ body {
 
 #newMachine.disabled {
     content: url(pics/new_machine_locked.png);
+}
+
+#moneyRewardDiv {
+
+    height: 320px;
+    width: 200px;
+    position: absolute;
+    left: 270px;
+    top: 180px;
+}
+
+#moneyRewardDiv2 {
+
+    height: 320px;
+    width: 200px;
+    position: absolute;
+    left: 730px;
+    top: 180px;
 }
