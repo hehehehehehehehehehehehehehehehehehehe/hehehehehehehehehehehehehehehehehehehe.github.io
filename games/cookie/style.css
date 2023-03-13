@@ -43,7 +43,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
-} 
+}
+
+#hand:hover{
+    cursor: pointer;
+}
 
 #hand:active {
     background-image: url('pics/punching_fist_hit.png');
