@@ -45,12 +45,7 @@ body {
     z-index: 1;
 } 
 
-#hand:hover {
-    zoom: 1.3;
-}
-
 #hand:active {
-    zoom: 1.5;
     background-image: url('pics/punching_fist_hit.png');
 }
 
@@ -109,4 +104,18 @@ body {
 
 #moneyReward {
     z-index: 2;
+}
+
+#fistDiv {
+    height: 325px;
+    width: 205px;
+    position: absolute;
+    left:497.7px;
+    top: 175px;
+}
+
+#moneyDisplay {
+    color: aliceblue;
+    background-color: rgb(114, 194, 194);
+    position: absolute;
 }

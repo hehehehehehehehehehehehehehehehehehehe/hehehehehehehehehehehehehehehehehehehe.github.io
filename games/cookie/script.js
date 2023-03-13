@@ -31,10 +31,8 @@ function click() {
   moneyReward.innerText = "+" + rewardValue.toFixed(2);
   moneyReward.id = "moneyReward";
   moneyReward.style.position = "absolute";
-  moneyReward.style.left =
-    Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
-  moneyReward.style.top =
-    Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
+  moneyReward.style.left = Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
+  moneyReward.style.top = Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
 
   if (rewardValue < 0.03) {
     moneyReward.style.color = "white";
@@ -60,8 +58,14 @@ function click() {
   setTimeout(() => {
     moneyReward.remove();
   }, 2000);
-}
 
+  //Teleport Fist
+  hand.style.left = Math.floor(Math.random() * fistDiv.offsetWidth) + "px";
+  hand.style.top = Math.floor(Math.random() * fistDiv.offsetHeight) + "px";
+
+  const MD = document.getElementById("moneyDisplay");
+  MD.innerText = moneyValue.toFixed(2) + "€";
+}
 // CUSTOM CURSOR
 var hand = document.getElementById("hand");
 
