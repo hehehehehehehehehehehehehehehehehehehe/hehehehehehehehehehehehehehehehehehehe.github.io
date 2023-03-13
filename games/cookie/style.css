@@ -5,6 +5,7 @@
 body {
     background-color: var(--bg-color);
     overflow: hidden;
+    cursor: default;
 }
 
 .matchfield {
@@ -38,18 +39,25 @@ body {
     zoom: 5.3;
 }
 
-.cursor {
-    position: absolute;
+.hand {
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 51%;
+    top: 70%;
+    background-image: url('pics/punching_fist.png');
+    image-rendering: pixelated;
+    position: relative;
     pointer-events: none;
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .clicked {
-    background-image: url('pics/punching_fist.png');
+    background-image: url('pics/punching_fist_hit.png');
+    image-rendering: pixelated;
 }
 
 #newMachine {
