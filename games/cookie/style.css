@@ -86,17 +86,36 @@ body {
 #moneyRewardDiv {
 
     height: 320px;
+<<<<<<< Updated upstream
     width: 200px;
     position: absolute;
     left: 270px;
+=======
+    width: 150px;
+    position: absolute;
+    left: 300px;
+>>>>>>> Stashed changes
     top: 180px;
 }
 
 #moneyRewardDiv2 {
 
     height: 320px;
+<<<<<<< Updated upstream
     width: 200px;
     position: absolute;
     left: 730px;
     top: 180px;
+=======
+    width: 150px;
+    position: absolute;
+    left: 750px;
+    top: 180px;
+}
+
+#moneyReward {
+
+    color: rgb(255, 255, 255);
+    top: 5;
+>>>>>>> Stashed changes
 }
