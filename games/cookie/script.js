@@ -29,7 +29,9 @@ var html = document.querySelector("html");
 document.addEventListener("mousedown", function (event) {
   if (event.target.id === "clicker") {
     hand.classList.add("clicked");
-    new Audio("sounds/punch.mp3", 0).play();
+    const punchAudio = new Audio("sounds/punch.mp3");
+    punchAudio.volume = 0.3;
+    punchAudio.play();
   }
 });
 
