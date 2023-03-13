@@ -50,3 +50,27 @@ body {
 #cursor.clicked {
     content: url(pics/hand-hit.png);
 } */
+
+#newMachine {
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 10%;
+    image-rendering: pixelated;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    content: url(pics/new_machine.png);
+}
+
+#newMachine:hover{
+    cursor: pointer;
+}
+
+#newMachine:active{
+    content: url(pics/new_machine_clicked.png);
+}
+
+#newMachine.disabled {
+    content: url(pics/new_machine_locked.png);
+}
