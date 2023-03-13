@@ -21,3 +21,31 @@ function click() {
     moneyValue += 0.5;
   }
 }
+
+// CUSTOM CURSOR
+var cursor = document.querySelector(".cursor");
+var body = document.querySelector("body");
+
+document.addEventListener("mousedown", function (event) {
+  if (event.target.id === "clicker") {
+    // hide default cursor
+    body.style.cursor = "none";
+    // change cursor image
+    cursor.classList.add("clicked");
+  }
+});
+
+document.addEventListener("mouseup", function () {
+  // show default cursor
+  body.style.cursor = "default";
+  // change cursor image
+  cursor.classList.remove("clicked");
+});
+
+document.addEventListener("mousemove", function (event) {
+  var x = event.clientX;
+  var y = event.clientY;
+
+  cursor.style.top = y + "px";
+  cursor.style.left = x + "px";
+});

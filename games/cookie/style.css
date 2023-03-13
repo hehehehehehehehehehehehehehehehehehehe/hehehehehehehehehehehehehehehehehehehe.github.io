@@ -4,6 +4,7 @@
 
 body {
     background-color: var(--bg-color);
+    overflow: hidden;
 }
 
 .matchfield {
@@ -37,18 +38,18 @@ body {
     zoom: 5.3;
 }
 
-#cursor {
-    z-index: 1000;
+.cursor {
     position: absolute;
-    top: 0;
-    left: 0;
-    aspect-ratio: 1;
-    width: 100px;
     pointer-events: none;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
 }
 
-#cursor.clicked {
-    content: url(pics/hand-hit.png);
+.clicked {
+    background-image: url('pics/punching_fist.png');
 }
 
 #newMachine {
