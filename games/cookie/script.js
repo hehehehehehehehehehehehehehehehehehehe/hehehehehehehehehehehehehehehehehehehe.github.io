@@ -21,16 +21,16 @@ function click() {
     rewardValue = moneyIncome1;
   } else if (moneyProperty < IncomeProperty2) {
     moneyValue += moneyIncome2;
-    rewardValue = moneyIncome2; 
+    rewardValue = moneyIncome2;
   } else if (moneyProperty < IncomeProperty3) {
     moneyValue += moneyIncome3;
-    rewardValue = moneyIncome3; 
+    rewardValue = moneyIncome3;
   } else if (moneyProperty < IncomeProperty4) {
     moneyValue += moneyIncome4;
     rewardValue = moneyIncome4;
   } else if (moneyProperty < IncomeProperty5) {
     moneyValue += moneyIncome5;
-    rewardValue = moneyIncome5; 
+    rewardValue = moneyIncome5;
   } else {
     moneyValue += moneyIncome6;
     rewardValue = moneyIncome6;
@@ -40,8 +40,10 @@ function click() {
   moneyReward.innerText = "+" + rewardValue.toFixed(2);
   moneyReward.id = "moneyReward";
   moneyReward.style.position = "absolute";
-  moneyReward.style.left = Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
-  moneyReward.style.top = Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
+  moneyReward.style.left =
+    Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
+  moneyReward.style.top =
+    Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
 
   if (rewardValue < 0.03) {
     moneyReward.style.color = "white";
@@ -77,22 +79,19 @@ function click() {
   MD.innerText = moneyValue.toFixed(2) + "€";
 }
 
-let nextUpgradeValue = 5
+let nextUpgradeValue = 5;
 
 setInterval(() => {
-
   const UM = document.getElementById("upgradeMachine");
   if (machineType == 1 && moneyValue >= nextUpgradeValue) {
-    UM.classList.remove("disabled")
+    UM.classList.remove("disabled");
   } else {
-    UM.classList.add("disabled")
+    UM.classList.add("disabled");
   }
-
 }, 200);
 
-let clicker = document.getElementById("clicker")
+let clicker = document.getElementById("clicker");
 function upgradeMachine() {
-
   if (machineType == 1 && moneyValue >= 5) {
     moneyValue -= 5;
     moneyValue - 5;
@@ -103,13 +102,12 @@ function upgradeMachine() {
     IncomeProperty5 = 96;
     machineType = 2;
     nextUpgradeValue = 10;
-    clicker.src = "./pics/cany_vending_machine_silver.png"
+    clicker.src = "./pics/cany_vending_machine_silver.png";
   }
 
   const MD = document.getElementById("moneyDisplay");
   MD.style.display = "block";
   MD.innerText = moneyValue.toFixed(2) + "€";
-
 }
 
 // CUSTOM CURSOR

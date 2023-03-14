@@ -7,7 +7,7 @@
 
 @media (max-width: 1200px) {
     div.header{
-        zoom: 3;
+        zoom: 1.5;
     }
 
     * {
@@ -73,5 +73,9 @@
         left: 80%;
         height: 800px;
         width: 500px;
+    }
+
+    p#moneyReward {
+        font-size: 450% !important;
     }
 }
