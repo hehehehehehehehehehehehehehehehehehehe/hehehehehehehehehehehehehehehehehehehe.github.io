@@ -92,3 +92,11 @@ div#help {
   .help:hover {
     cursor: pointer;
   }
+
+  /* MOBILE ONLY */
+@media (pointer:coarse) {
+    div#help {
+        background-color: rgba(128, 128, 128, 0.5);
+        pointer-events: none;
+    }
+}
