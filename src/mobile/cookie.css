@@ -6,9 +6,13 @@
 }
 
 @media (max-width: 1200px) {
+    body {
+        zoom: 0.7;
+    }
+
     div.matchfield {
         position: absolute;
-        top: 60%;
+        top: 55%;
         zoom: 0.5;
         height:75%;
         width: 90%;
