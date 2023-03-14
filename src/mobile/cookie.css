@@ -5,14 +5,12 @@
     }
 }
 
-div#fistDiv {
-    background-color: rgba(255, 0, 0, 0.247);
-}
-
 @media (max-width: 1200px) {
     div.matchfield {
+        position: absolute;
+        top: 60%;
         zoom: 0.5;
-        height: 75%;
+        height:75%;
         width: 90%;
     }
 
@@ -34,7 +32,6 @@ div#fistDiv {
     }
 
     div#fistDiv {
-        background-color: rgba(255, 0, 0, 0.247);
         position: absolute;
         transform: translate(-50%, -50%);
         top: 56%;
