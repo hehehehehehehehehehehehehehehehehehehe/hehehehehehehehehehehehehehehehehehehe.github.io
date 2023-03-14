@@ -1,7 +1,9 @@
 - Fußballspiel
 - Cookie Clicker
--2 Player Parkour ? bruda ka
--Clickspiel
--Memory game (idee von google geklaut)
--tic tac toe (mit krassen bot als gegner ka)
--dieses komische dino run game wenn du kein wlan hast
+- 2 Player Parkour ?
+- Klickspiel
+- Aim-game
+- Dice | Coinflip
+- Memory game
+- tic tac toe
+- Dino run
