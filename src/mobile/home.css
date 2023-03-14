@@ -1,0 +1,12 @@
+/* MOBILE ONLY */
+@media (pointer:coarse) {
+    body {
+        zoom: 1;
+    }
+}
+
+@media (max-width: 620px) {
+    .box {
+        zoom: 0.5;
+    }
+}
