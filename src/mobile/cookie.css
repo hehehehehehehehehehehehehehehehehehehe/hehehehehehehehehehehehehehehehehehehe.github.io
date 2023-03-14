@@ -1,0 +1,55 @@
+/* MOBILE ONLY */
+@media (pointer:coarse) {
+    body {
+        zoom: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    * {
+        outline-offset: 10px red;
+    }
+
+    body {
+        zoom: 0.5;
+    }
+
+    div.matchfield {
+        position: absolute;
+        top: 55%;
+        zoom: 0.5;
+        height:75%;
+        width: 90%;
+    }
+
+    #upgradeMachine{
+        zoom: 2;
+    }
+    #newMachine{
+        zoom: 2;
+    }
+
+    #clicker {
+        width: 100px;
+    }
+
+    #moneyDisplay {
+        zoom: 2;
+        bottom: 0;
+        font-size: 200%;
+    }
+
+    div#fistDiv {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 53%;
+        left: 50%;
+        width: 400px;
+        height: 600px;
+    }
+
+    div#hand {
+        zoom: 1;
+        padding: 120px;
+    }
+}
