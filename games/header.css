@@ -105,4 +105,8 @@ div#help {
         top: 23%;
         width: 75%;
     }
+
+    div.help {
+        width: 100vw;
+    }
 }
