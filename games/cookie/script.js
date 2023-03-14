@@ -13,7 +13,7 @@ let IncomeProperty5 = 96;
 let machineType = 1;
 
 let moneyValue = 0;
-document.getElementById("hand").addEventListener("click", click);
+// document.getElementById("hand").addEventListener("click", click);
 function click() {
   moneyProperty = Math.floor(Math.random() * 100);
   if (moneyProperty < IncomeProperty1) {
@@ -115,6 +115,7 @@ var hand = document.getElementById("hand");
 
 document.addEventListener("mousedown", function (event) {
   if (event.target.id === "hand") {
+    click();
     hand.classList.add("clicked");
     const punchAudio = new Audio("sounds/punch.mp3");
     punchAudio.volume = 0.3;
