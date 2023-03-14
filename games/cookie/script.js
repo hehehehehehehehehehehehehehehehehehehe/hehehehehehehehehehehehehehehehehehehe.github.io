@@ -1,40 +1,45 @@
+let moneyIncome1 = 0.01;
+let moneyIncome2 = 0.02;
+let moneyIncome3 = 0.05;
+let moneyIncome4 = 0.1;
+let moneyIncome5 = 0.2;
+let moneyIncome6 = 0.5;
+
 let moneyValue = 0;
 document.getElementById("hand").addEventListener("click", click);
 function click() {
   moneyProperty = Math.floor(Math.random() * 100);
   if (moneyProperty < 21) {
-    moneyValue += 0.01;
-    rewardValue = 0.01;
+    moneyValue += moneyIncome1;
+    rewardValue = moneyIncome1;
   }
   if (20 < moneyProperty && moneyProperty < 51) {
-    moneyValue += 0.02;
-    rewardValue = 0.02; 
+    moneyValue += moneyIncome2;
+    rewardValue = moneyIncome2; 
   }
   if (50 < moneyProperty && moneyProperty < 71) {
-    moneyValue += 0.05;
-    rewardValue = 0.05; 
+    moneyValue += moneyIncome3;
+    rewardValue = moneyIncome3; 
   }
   if (70 < moneyProperty && moneyProperty < 86) {
-    moneyValue += 0.1;
-    rewardValue = 0.1;
+    moneyValue += moneyIncome4;
+    rewardValue = moneyIncome4;
   }
   if (85 < moneyProperty && moneyProperty < 96) {
-    moneyValue += 0.2;
-    rewardValue = 0.2; 
+    moneyValue += moneyIncome5;
+    rewardValue = moneyIncome5; 
   }
   if (95 < moneyProperty && moneyProperty < 101) {
-    moneyValue += 0.5;
-    rewardValue = 0.5;
+    moneyValue += moneyIncome6;
+    rewardValue = moneyIncome6;
   }
 
   const moneyReward = document.createElement("p");
   moneyReward.innerText = "+" + rewardValue.toFixed(2);
   moneyReward.id = "moneyReward";
   moneyReward.style.position = "absolute";
-  moneyReward.style.left =
-    Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
-  moneyReward.style.top =
-    Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
+  moneyReward.style.left = Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
+  moneyReward.style.top = Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
 
   if (rewardValue < 0.03) {
     moneyReward.style.color = "white";
@@ -69,6 +74,11 @@ function click() {
   MD.style.display = "block";
   MD.innerText = moneyValue.toFixed(2) + "€";
 }
+
+setInterval(() => {
+
+}, 200);
+
 // CUSTOM CURSOR
 var hand = document.getElementById("hand");
 
