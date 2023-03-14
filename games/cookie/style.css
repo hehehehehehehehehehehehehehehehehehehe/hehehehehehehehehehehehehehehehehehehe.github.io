@@ -147,3 +147,16 @@ body {
     background-color: rgb(114, 194, 194);
     position: absolute;
 }
+
+#moneyDisplay {
+    margin: 5%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color:gray;
+    border-style: solid;
+    display: none;
+}
