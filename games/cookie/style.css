@@ -82,6 +82,30 @@ body {
     content: url(pics/new_machine_locked.png);
 }
 
+#upgradeMachine {
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 7%;
+    image-rendering: pixelated;
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    content: url(pics/upgrade_machine.png);
+}
+
+#upgradeMachine:hover{
+    cursor: pointer;
+}
+
+#upgradeMachine:active{
+    content: url(pics/upgrade_machine_clicked.png);
+}
+
+#upgradeMachine.disabled {
+    content: url(pics/upgrade_machine_locked.png);
+}
+
 #moneyRewardDiv {
 
     height: 320px;
