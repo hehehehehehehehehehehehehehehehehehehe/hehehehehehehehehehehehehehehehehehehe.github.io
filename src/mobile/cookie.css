@@ -6,6 +6,10 @@
 }
 
 @media (max-width: 1200px) {
+    * {
+        outline-offset: 10px red;
+    }
+
     body {
         zoom: 0.5;
     }
@@ -42,5 +46,9 @@
         left: 50%;
         width: 500px;
         height: 800px;
+    }
+
+    div#hand {
+        zoom: 3;
     }
 }
