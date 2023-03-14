@@ -50,6 +50,14 @@
     float: right;
 }
 
+/* MOBILE ONLY */
+@media (pointer:coarse) {
+
+a.logo:hover{
+    background-color: transparent;
+}
+}
+
 @media screen and (max-width: 590px) {
     .header {
         position: relative;
