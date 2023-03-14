@@ -77,5 +77,6 @@
 
     p#moneyReward {
         font-size: 450% !important;
+        z-index: 10;
     }
 }
