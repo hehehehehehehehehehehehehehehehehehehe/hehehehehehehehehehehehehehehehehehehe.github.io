@@ -78,7 +78,7 @@
 
   .disabled:after {
     color: red;
-    content: "Comming Soon";
+    content: "Coming Soon";
   }
   
   h3{ 
