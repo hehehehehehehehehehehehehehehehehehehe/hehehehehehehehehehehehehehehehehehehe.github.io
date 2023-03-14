@@ -9,11 +9,26 @@ let IncomeProperty2 = 51;
 let IncomeProperty3 = 71;
 let IncomeProperty4 = 86;
 let IncomeProperty5 = 96;
-
 let machineType = 1;
-
 let moneyValue = 0;
-// document.getElementById("hand").addEventListener("click", click);
+
+// CUSTOM CURSOR
+var hand = document.getElementById("hand");
+
+document.addEventListener("mousedown", function (event) {
+  if (event.target.id === "hand") {
+    click();
+    hand.classList.add("clicked");
+    const punchAudio = new Audio("sounds/punch.mp3");
+    punchAudio.volume = 0.3;
+    punchAudio.play();
+  }
+});
+
+document.addEventListener("mouseup", function () {
+  hand.classList.remove("clicked");
+});
+
 function click() {
   moneyProperty = Math.floor(Math.random() * 100);
   if (moneyProperty < IncomeProperty1) {
@@ -40,10 +55,8 @@ function click() {
   moneyReward.innerText = "+" + rewardValue.toFixed(2);
   moneyReward.id = "moneyReward";
   moneyReward.style.position = "absolute";
-  moneyReward.style.left =
-    Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
-  moneyReward.style.top =
-    Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
+  moneyReward.style.left = Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
+  moneyReward.style.top = Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
 
   if (rewardValue < 0.03) {
     moneyReward.style.color = "white";
@@ -83,7 +96,7 @@ let nextUpgradeValue = 5;
 
 setInterval(() => {
   const UM = document.getElementById("upgradeMachine");
-  if (machineType == 1 && moneyValue >= nextUpgradeValue) {
+  if (moneyValue >= nextUpgradeValue) {
     UM.classList.remove("disabled");
   } else {
     UM.classList.add("disabled");
@@ -94,7 +107,6 @@ let clicker = document.getElementById("clicker");
 function upgradeMachine() {
   if (machineType == 1 && moneyValue >= 5) {
     moneyValue -= 5;
-    moneyValue - 5;
     IncomeProperty1 = 11;
     IncomeProperty2 = 31;
     IncomeProperty3 = 61;
@@ -102,29 +114,23 @@ function upgradeMachine() {
     IncomeProperty5 = 96;
     machineType = 2;
     nextUpgradeValue = 10;
-    clicker.src = "./pics/cany_vending_machine_silver.png";
+    clicker.src = "./pics/candy_vending_machine_silver.png";
+  }
+
+  if (machineType == 2 && moneyValue >= 10) {
+    moneyValue -= 10;
+    IncomeProperty1 = 6;
+    IncomeProperty2 = 21;
+    IncomeProperty3 = 41;
+    IncomeProperty4 = 71;
+    IncomeProperty5 = 91;
+    nextUpgradeValue = 999999999999999;
+    clicker.src = "./pics/candy_vending_machine_gold.png"
   }
 
   const MD = document.getElementById("moneyDisplay");
   MD.style.display = "block";
   MD.innerText = moneyValue.toFixed(2) + "€";
 }
-
-// CUSTOM CURSOR
-var hand = document.getElementById("hand");
-
-document.addEventListener("mousedown", function (event) {
-  if (event.target.id === "hand") {
-    click();
-    hand.classList.add("clicked");
-    const punchAudio = new Audio("sounds/punch.mp3");
-    punchAudio.volume = 0.3;
-    punchAudio.play();
-  }
-});
-
-document.addEventListener("mouseup", function () {
-  hand.classList.remove("clicked");
-});
 
 upgradeMachine(); // text is hide without
