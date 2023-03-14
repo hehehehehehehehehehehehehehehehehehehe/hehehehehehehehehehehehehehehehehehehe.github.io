@@ -9,6 +9,7 @@
     margin: 0;
     user-select: none;
     font-family: UnknownFont;
+    -webkit-tap-highlight-color: transparent;
 }
 
 *:focus {
