@@ -129,9 +129,6 @@ body {
 
     color: rgb(255, 255, 255);
     top: 5;
-}
-
-#moneyReward {
     z-index: 1 !important;
 }
 
@@ -147,6 +144,7 @@ body {
     color: aliceblue;
     background-color: rgb(114, 194, 194);
     position: absolute;
+    z-index: 1;
 }
 
 #moneyDisplay {
