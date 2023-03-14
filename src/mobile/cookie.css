@@ -6,6 +6,10 @@
 }
 
 @media (max-width: 1200px) {
+    div.header{
+        zoom: 3;
+    }
+
     * {
         outline-offset: 10px red;
     }
@@ -51,5 +55,23 @@
     div#hand {
         zoom: 1;
         padding: 120px;
+    }
+
+    div#moneyRewardDiv {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 55%;
+        left: 20%;
+        height: 800px;
+        width: 500px;
+    }
+    
+    div#moneyRewardDiv2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 55%;
+        left: 80%;
+        height: 800px;
+        width: 500px;
     }
 }
