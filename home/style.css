@@ -53,7 +53,7 @@
     margin-bottom: -10px;  
   }
 
-  .grid .btn {
+  .btn {
     margin-top: 20px;
     background-color: aqua;
       border: 0;
@@ -61,14 +61,22 @@
       color: #000;
       font-size: 15px;
       line-height: 50px;
-      padding: 15px 10%;
+      width: 50%;
+      height: 30px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn:after {
-    content: "Click to play"
+    content: "Click to play";
   }
   
   .btn:hover {
@@ -84,6 +92,7 @@
   h3{ 
     color: white;
     text-align: center;
+    padding-bottom: 10px;
   }
 
   h1.title {
@@ -101,6 +110,7 @@
 
 article {
   position: relative;
+  padding-bottom: 50px;
 }
 
 #badgeNew{
