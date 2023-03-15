@@ -61,22 +61,15 @@
       color: #000;
       font-size: 15px;
       line-height: 50px;
-      width: 50%;
-      height: 30px;
+      padding: 10px 40px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+    bottom: 0;
   }
 
   .btn:after {
     content: "Click to play";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   
   .btn:hover {
