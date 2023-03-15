@@ -72,18 +72,23 @@
 
 /* help tooltip */
 div#help {
+    text-align: center;
     color: white;
     font-size: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-    background-color: gray;
-    padding: 50px 100px;
+    z-index: 11;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 20px 40px;
     position: absolute;
-    top: 57px;
     right: 0;
     pointer-events: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 75%;
+    top: 12%;
   }
   
   div#help.hidden {
