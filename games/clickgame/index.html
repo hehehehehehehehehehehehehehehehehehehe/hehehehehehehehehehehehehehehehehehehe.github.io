@@ -8,16 +8,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../src/logo.png" type="image/x-icon">
 
-    <title>Click Game</title>
+    <title>Unknown Games • Click Game</title>
 
 </head>
 
 <body>
 
-    <div>
-        <p id="score"></p>
-        <button id="button"></button>
+    <div class="header">
+        <div class="logo">
+            <a draggable="false" href="../../">Unknown Games</a>
+        </div>
+        <div class="header-right">
+            <a class="help" onclick="help()">Help</a>
+        </div>
+    </div>
+
+    <div id="clickgame">
+        <p id="score">Click to start!</p>
     </div>
 
 </body>
@@ -26,21 +35,43 @@
 
 <script>
 
-let score = 0;
+    let score = 0;
+    let clickedOnce = 0;
 
-button.addEventListener("click", () => {
+    clickgame.addEventListener("click", () => {
 
-    let gameGoesOn = true;
+        clickgame.style.backgroundColor = "#22b54a"
 
-    score ++;
-    if (score === 25) {
-        alert("Gratulation! Du hast das Spiel gewonnen!");
-        return;
+        score++;
+        document.getElementById("score").innerHTML = `Clicks: ${score}`;
+
+
+        if (clickedOnce == 0) {
+            console.log("tf")
+            setTimeout(timerEnd, 10000);
+        }
+
+        clickedOnce++
+    });
+
+    function timerEnd() {
+        const seconds = 15;
+        const clicksPerSecond = score / seconds;
+
+        const message = "You clicked " + score + " times in " + seconds + " seconds." + "\nClicks per second: [ " + clicksPerSecond + " ]"
+
+        alert(message)
+        reset();
     }
 
-
-    document.getElementById("score").innerHTML = `Punktestand: ${score}`;
-
-});
+    function reset() {
+        score = 0;
+        clickedOnce = 0;
+        clickgame.style.backgroundColor = "#2253b5"
+        document.getElementById("score").innerHTML = "Click to start!";
+    }
 
 </script>
+
+<!-- HELP TOOLTIP -->
+<script src="../help.js"></script>
