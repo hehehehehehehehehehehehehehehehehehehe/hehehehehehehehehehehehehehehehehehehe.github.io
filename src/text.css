@@ -8,4 +8,8 @@
     content: "Press the fist to get money from the machines. You can also unlock new machines (press 'new machine' in the top left corner).";
 }
 
+.helpTextClickgame:after {
+    content: "Click the field as fast as you can and see your results after a few seconds.";
+}
+
 /* ------------- */

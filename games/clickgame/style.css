@@ -1,9 +1,6 @@
 @import url(../../src/main.css);
 @import url(../header.css);
-
-body {
-    background-color: rgb(31, 31, 31);
-}
+@import url(../../src/text.css);
 
 div#clickgame {
 
@@ -24,7 +21,7 @@ div#clickgame {
     border-color: gray;
 }
 
-p {
+p#score {
     color: aliceblue;
     margin: 10px;
     font-size: 150%;
