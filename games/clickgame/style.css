@@ -21,6 +21,10 @@ div#clickgame {
     border-color: gray;
 }
 
+div#clickgame {
+    cursor: pointer;
+}
+
 p#score {
     color: aliceblue;
     margin: 10px;
