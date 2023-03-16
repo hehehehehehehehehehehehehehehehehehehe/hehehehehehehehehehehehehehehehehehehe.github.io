@@ -12,4 +12,8 @@
     content: "Click the field as fast as you can and see your results after a few seconds.";
 }
 
+.helpTextChancegame:after {
+    content: "Test your luck by clicking the objects.";
+}
+
 /* ------------- */
