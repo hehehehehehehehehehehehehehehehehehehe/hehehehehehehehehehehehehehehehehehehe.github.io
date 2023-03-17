@@ -1,4 +1,4 @@
-const maxGames = 4;
+const maxGames = 5;
 
 function randomIntFromInterval(min, max) {
   // min and max included
@@ -15,5 +15,7 @@ function randomGame() {
     location.href = "../games/clickgame";
   } else if (selectedGame == 4) {
     location.href = "../games/chancegame";
+  } else if (selectedGame == 5) {
+    location.href = "../games/aimtrainer";
   } else alert("No game found!");
 }
