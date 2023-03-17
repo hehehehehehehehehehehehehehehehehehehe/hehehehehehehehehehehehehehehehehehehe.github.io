@@ -1,4 +1,5 @@
 const dice = document.getElementById("dice");
+const coin = document.getElementById("coin");
 
 dice.addEventListener("click", function diceClick() {
   const diceNumber = Math.round(Math.random() * 5) + 1;
@@ -24,6 +25,21 @@ dice.addEventListener("click", function diceClick() {
   diceAudio.play();
 
   runWiggle();
+});
+
+coin.addEventListener("click", function coinClick() {
+  const coinNumber = Math.round(Math.random() * 1);
+  coin.innerHTML = "";
+
+  if (coinNumber == 1) {
+    coin.style.backgroundImage = "url(pics/coin1.png)"
+  } if (coinNumber == 0) {
+    coin.style.backgroundImage = "url(pics/ruki.png)"
+  }
+
+  const diceAudio = new Audio("sounds/dice.mp3");
+  diceAudio.volume = 0.4;
+  diceAudio.play();
 });
 
 function runWiggle() {

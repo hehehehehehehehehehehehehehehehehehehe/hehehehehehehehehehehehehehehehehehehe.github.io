@@ -35,6 +35,24 @@ button#dice {
     image-rendering: pixelated;
 }
 
+#coin {
+  background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    left: 30%;
+    top: 50%;
+    position: absolute;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
 button#dice:hover {
     cursor: pointer;
 }
