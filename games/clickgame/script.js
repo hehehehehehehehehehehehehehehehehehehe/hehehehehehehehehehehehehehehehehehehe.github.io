@@ -8,7 +8,6 @@ clickgame.addEventListener("click", () => {
   document.getElementById("score").innerHTML = `Clicks: ${score}`;
 
   if (clickedOnce == 0) {
-    console.log("tf");
     setTimeout(timerEnd, 10000);
   }
 

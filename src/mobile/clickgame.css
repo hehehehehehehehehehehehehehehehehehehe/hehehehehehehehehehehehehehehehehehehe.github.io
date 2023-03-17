@@ -1,0 +1,18 @@
+/* MOBILE ONLY */
+@media (pointer:coarse) {
+    body{
+        zoom: 1;
+    }
+}
+
+@media (max-width: 620px) {
+    div#clickgame {
+    font-size: 7px;
+    top: 65% !important;
+    width: 75% !important;
+    height: 50%;
+    }
+}
+
+
+* { border: 1px solid red; }
