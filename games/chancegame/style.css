@@ -90,6 +90,9 @@ button#dice.wiggle {
 }
 
 button#coin {
+  border-width: 3px;
+  border-color: goldenrod;
+  border-style: groove;
   border-radius: 50%;
   background-color: gold;
   width: 100px;
