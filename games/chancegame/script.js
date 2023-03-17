@@ -28,18 +28,13 @@ dice.addEventListener("click", function diceClick() {
 });
 
 coin.addEventListener("click", function coinClick() {
-  const coinNumber = Math.round(Math.random() * 1);
   coin.innerHTML = "";
 
-  if (coinNumber == 1) {
-    coin.style.backgroundImage = "url(pics/coin1.png)"
-  } if (coinNumber == 0) {
-    coin.style.backgroundImage = "url(pics/ruki.png)"
-  }
-
-  const diceAudio = new Audio("sounds/dice.mp3");
+  const diceAudio = new Audio("sounds/coin.mp3");
   diceAudio.volume = 0.4;
   diceAudio.play();
+
+  runFlip();
 });
 
 function runWiggle() {
@@ -55,4 +50,28 @@ function startWiggle() {
 
 function endWiggle() {
   dice.classList.remove("wiggle");
+}
+
+function runFlip() {
+  startFlip();
+  setTimeout(() => {
+    endFlip();
+
+    const coinNumber = Math.round(Math.random() * 1);
+
+    if (coinNumber == 0) {
+      coin.style.backgroundImage = "url(pics/coin0.png)";
+    }
+    if (coinNumber == 1) {
+      coin.style.backgroundImage = "url(pics/coin1.png)";
+    }
+  }, 300);
+}
+
+function startFlip() {
+  coin.classList.add("flip");
+}
+
+function endFlip() {
+  coin.classList.remove("flip");
 }
