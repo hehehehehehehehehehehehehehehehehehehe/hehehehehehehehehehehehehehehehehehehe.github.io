@@ -16,6 +16,14 @@
 
 <body>
 
+    <div class="header">
+        <div class="logo">
+            <a draggable="false" href="../../">Unknown Games</a>
+        </div>
+        <div class="header-right">
+            <a class="help" onclick="help()">Help</a>
+        </div>
+    </div>
 
     <div id="startDiv">Start</div>
     <div id="aimField">
@@ -29,3 +37,9 @@
 </html>
 
 <script src="script.js"></script>
+<!-- HELP TOOLTIP -->
+
+<div id="help" class="hidden">
+    <p class="helpTextAimtrainer"></p>
+</div>
+<script src="../help.js"></script>

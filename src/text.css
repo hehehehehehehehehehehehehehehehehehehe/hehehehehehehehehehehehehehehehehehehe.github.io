@@ -16,4 +16,8 @@
     content: "Test your luck by clicking the objects.";
 }
 
+.helpTextAimtrainer:after {
+    content: "Practice your aim by clicking on the aim point on the screen.";
+}
+
 /* ------------- */
