@@ -18,7 +18,7 @@ div#board {
 }
 
 button#dice {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 5px;
     width: 100px;
     aspect-ratio: 1;
@@ -36,7 +36,7 @@ button#dice {
 }
 
 #coin {
-  background-color: white;
+  background-color: #ffffff;
     border-radius: 5px;
     width: 100px;
     aspect-ratio: 1;
@@ -58,7 +58,7 @@ button#dice:hover {
 }
 
 button#dice.wiggle {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 5px;
     width: 100px;
     aspect-ratio: 1;
