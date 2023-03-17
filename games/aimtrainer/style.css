@@ -1,0 +1,63 @@
+@import url(../../src/main.css);
+
+#aimField {
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    background-color: #6088d8;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(59, 59, 59);
+    z-index: 1;
+}
+
+#startDiv {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    background-color: #60d884;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(59, 59, 59);
+    z-index: 2;
+    color: aliceblue;
+    font-size: 320%;
+}
+
+#aimCursor {
+    zoom: 150%;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 22px;
+}
+
+#time {
+    color: aliceblue;
+    position: absolute;
+    top: -7.5%;
+    left: 0%;
+    font-size: 150%;
+}
+
+#highscore {
+    color: aliceblue;
+    position: absolute;
+    top: -7.5%;
+    right: 6%;
+    font-size: 150%; 
+}

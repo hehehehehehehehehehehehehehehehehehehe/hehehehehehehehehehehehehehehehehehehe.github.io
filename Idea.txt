@@ -3,7 +3,6 @@
 - 2 Player Parkour ?
 X - Klickspiel
 - Aim-game
-- Dice | Coinflip
 - Memory game
 - tic tac toe
 - Dino run
