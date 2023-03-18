@@ -1,6 +1,6 @@
-document.getElementById("logo").addEventListener("click", click);
+document.getElementById("logo").addEventListener("click", hideHeader);
 
-function click() {
+function hideHeader() {
   let logo = document.getElementById("logo");
   let header = document.getElementById("header");
   var elements = header.children;
@@ -12,12 +12,16 @@ function click() {
         header.style.boxShadow = "";
         header.style.padding = "";
         logo.style.backgroundColor = "";
+        logo.style.padding = "";
+        logo.style.width = "";
       } else {
         elements[i].style.display = "none";
         header.style.backgroundColor = "transparent";
         header.style.boxShadow = "none";
-        header.style.padding = "1px";
-        logo.style.backgroundColor = "rgb(31, 31, 31)";
+        header.style.padding = "0";
+        logo.style.backgroundColor = "rgb(31, 31, 31, 0.7)";
+        logo.style.padding = "0px";
+        logo.style.width = "100%";
       }
     }
   }
