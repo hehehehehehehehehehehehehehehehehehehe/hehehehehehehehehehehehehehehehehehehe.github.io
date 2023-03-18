@@ -107,9 +107,11 @@ body {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 5px;
+    left: 10px;
     aspect-ratio: 1;
     width: 100px;
-    bottom: 5px;
-    max-width: 25%;
+    bottom: 10px;
+    max-width: 25vw;
+    border-radius: 50%;
+    image-rendering: pixelated;
 }
