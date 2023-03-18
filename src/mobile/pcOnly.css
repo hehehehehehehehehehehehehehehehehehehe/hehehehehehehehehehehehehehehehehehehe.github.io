@@ -1,7 +1,7 @@
 /* MOBILE ONLY */
 @media (pointer:coarse) {
     body *{
-        display: none;
+        display: none !important;
     }
 
     body:after {
