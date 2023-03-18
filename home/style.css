@@ -1,123 +1,121 @@
 @import url(../src/main.css);
 @import url(../src/mobile/home.css);
 
-
 * {
-    box-sizing: border-box;
-  }
-  
-  .box {
-    background-color: rgb(60, 63, 70);
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-    padding: 30px;
-    max-width: 1000px;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-  
-  body {
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-color);
-    justify-content: center;
-    display: flex;
-    zoom: 1.5;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    grid-gap: 20px;
-  
-  }
-  
-  .grid > article {
-    border: 1px solid black;
-    padding: 0 0;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-  }
-  
-  
-  .grid .text {
-    text-align: center;
-    padding: 10px 20px 20px 30px;
-    color: #808285;
-    margin-bottom: -10px;  
-  }
+  box-sizing: border-box;
+}
 
-  .btn {
-    margin-top: 20px;
-    font-size: 15px;
-    line-height: 50px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    bottom: 0;
-    padding: 10px 40px;
-    background-color: transparent !important;
-    color: white;
-    border-radius: 0px;
-    border-color: gray;
-    border-style: solid;
-    border-width: 1px;
-    transition: 0.3s;
-  }
+.box {
+  background-color: rgb(60, 63, 70);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  max-width: 1000px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  .btn:after {
-    content: "Click to play";
-  }
-  
-  .btn:hover {
-    background-color: rgb(128, 128, 128, 0.2) !important;
-    transition: 0.3s;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 
-  .disabled {
-    display: none;
-  }
+body {
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
+  justify-content: center;
+  display: flex;
+  zoom: 1.5;
+}
 
-  a.random {
-    color: white;
-    background-color: rgb(65, 105, 225, 0.5) !important;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 20px;
+}
 
-  a.random:after {
-    content: "Random Game";
-  }
-  
-  a.random:hover {
-    color: white;
-    background-color: rgb(65, 105, 225, 0.7) !important;
-  }
+.grid > article {
+  border: 1px solid black;
+  padding: 0 0;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+}
 
-  h3{ 
-    color: white;
-    text-align: center;
-    padding-bottom: 10px;
-  }
+.grid .text {
+  text-align: center;
+  padding: 10px 20px 20px 30px;
+  color: #808285;
+  margin-bottom: -10px;
+}
 
-  a.title {
-    color: white;
-    text-align: center;
-    margin: -10px 0 20px;
-    letter-spacing: 10px;
-    text-shadow: 2px 2px #999696;
-    background-color: var(--bg-color);
-    border-color: gray;
-    border-style: solid;
-    border-width: 1px;
-    font-size: 200%;
-  }
+.btn {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  bottom: 0;
+  padding: 10px 40px;
+  background-color: transparent !important;
+  color: white;
+  border-radius: 0px;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.3s;
+}
 
-  a.title:after {
-    content: "Unknown Games • Library";
-  }
+.btn:after {
+  content: "Click to play";
+}
+
+.btn:hover {
+  background-color: rgb(128, 128, 128, 0.2) !important;
+  transition: 0.3s;
+}
+
+.disabled {
+  display: none;
+}
+
+a.random {
+  color: white;
+  background-color: rgb(65, 105, 225, 0.5) !important;
+}
+
+a.random:after {
+  content: "Random Game";
+}
+
+a.random:hover {
+  color: white;
+  background-color: rgb(65, 105, 225, 0.7) !important;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+a.title {
+  color: white;
+  text-align: center;
+  margin: -10px 0 20px;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px #999696;
+  background-color: var(--bg-color);
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 200%;
+  min-width: 270px;
+}
+
+a.title:after {
+  content: "Unknown Games • Library";
+}
 
 article {
   position: relative;
@@ -125,7 +123,7 @@ article {
   border-color: gray !important;
 }
 
-#badgeNew{
+#badgeNew {
   background-color: limegreen;
   aspect-ratio: 2;
   height: 20px;
@@ -139,4 +137,17 @@ article {
   color: white;
   zoom: 0.8;
   border: 1px rgb(255, 255, 255, 0.5) solid;
+}
+
+.beta {
+  border: 1px red solid;
+  content: "[BETA]";
+}
+
+.beta:after {
+  content: "[BETA]";
+}
+
+.beta:hover {
+  background-color: rgb(255, 0, 0, 0.2) !important;
 }
