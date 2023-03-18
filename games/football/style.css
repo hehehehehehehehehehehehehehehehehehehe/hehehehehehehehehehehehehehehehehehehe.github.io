@@ -1,6 +1,7 @@
 @import url(../../src/main.css);
 @import url(../../src/text.css);
 @import url(../header.css);
+@import url(../../src/mobile/pcOnly.css);
 
 body {
 
