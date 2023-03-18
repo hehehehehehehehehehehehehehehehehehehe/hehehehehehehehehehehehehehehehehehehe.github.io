@@ -21,7 +21,7 @@ dice.addEventListener("click", function diceClick() {
   } else return;
 
   const diceAudio = new Audio("sounds/dice.mp3");
-  diceAudio.volume = 0.4;
+  diceAudio.volume = 0.5;
   diceAudio.play();
 
   runWiggle();
