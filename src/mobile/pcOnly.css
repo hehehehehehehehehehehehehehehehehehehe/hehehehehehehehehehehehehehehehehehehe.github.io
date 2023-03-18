@@ -7,7 +7,7 @@
     body:after {
         background-color: rgb(220, 20, 20);
         display: block;
-        content: "Website only available for PC";
+        content: "Game only available for PC";
         color: white;
         text-align: center;
         position: absolute;
