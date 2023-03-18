@@ -141,7 +141,7 @@ article {
 
 .beta {
   border: 1px red solid;
-  content: "[BETA]";
+  color: red;
 }
 
 .beta:after {
