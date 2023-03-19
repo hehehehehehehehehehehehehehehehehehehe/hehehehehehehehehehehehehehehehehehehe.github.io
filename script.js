@@ -7,7 +7,7 @@ function hideHeader() {
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].id !== "logo") {
       if (elements[i].style.display === "none") {
-        elements[i].style.display = "block";
+        elements[i].style.display = "";
         header.style.backgroundColor = "";
         header.style.boxShadow = "";
         header.style.padding = "";
