@@ -14,6 +14,7 @@ function hideHeader() {
         logo.style.backgroundColor = "";
         logo.style.padding = "";
         logo.style.width = "";
+        logo.style.cursor = "";
       } else {
         elements[i].style.display = "none";
         header.style.backgroundColor = "transparent";
@@ -22,6 +23,7 @@ function hideHeader() {
         logo.style.backgroundColor = "rgb(31, 31, 31, 0.7)";
         logo.style.padding = "0px";
         logo.style.width = "100%";
+        logo.style.cursor = "pointer";
       }
     }
   }
