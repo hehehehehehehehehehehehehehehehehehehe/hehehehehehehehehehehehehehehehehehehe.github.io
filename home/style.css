@@ -109,10 +109,16 @@ a.title {
   border-width: 1px;
   font-size: 200%;
   min-width: 270px;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
 }
 
 a.title:after {
-  content: "Unknown Games • Library";
+  content: "Library";
+}
+
+a.title:hover {
+  background-color: rgb(31, 31, 31, 0.5);
 }
 
 article {
