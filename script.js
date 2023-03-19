@@ -15,6 +15,7 @@ function hideHeader() {
         logo.style.padding = "";
         logo.style.width = "";
         logo.style.cursor = "";
+        logo.style.borderRadius = "";
       } else {
         elements[i].style.display = "none";
         header.style.backgroundColor = "transparent";
@@ -24,6 +25,7 @@ function hideHeader() {
         logo.style.padding = "0px";
         logo.style.width = "100%";
         logo.style.cursor = "pointer";
+        logo.style.borderRadius = "0";
       }
     }
   }

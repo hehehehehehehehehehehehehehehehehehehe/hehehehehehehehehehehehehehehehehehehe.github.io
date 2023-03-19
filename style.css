@@ -40,6 +40,11 @@
   background-color: rgba(128, 128, 128, 0.363);
 }
 
+#header a:active {
+  border-top-left-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+}
+
 #header-right {
   float: right;
 }
@@ -111,4 +116,10 @@ body {
   max-width: 25vw;
   border-radius: 50%;
   image-rendering: pixelated;
+  transition: 0.3s;
+}
+
+.corner-logo:hover {
+  border-top-right-radius: 30px;
+  transition: 0.3s;
 }
