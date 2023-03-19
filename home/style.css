@@ -16,14 +16,13 @@
   flex-direction: column;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
-
 body {
   padding-top: 20px;
   background-color: var(--bg-color);
   justify-content: center;
   display: flex;
   zoom: 1.5;
+  overflow-y: visible;
 }
 
 .grid {
@@ -56,7 +55,7 @@ body {
   font-weight: bold;
   bottom: 0;
   padding: 10px 40px;
-  background-color: transparent !important;
+  background-color: transparent;
   color: white;
   border-radius: 0px;
   border-color: gray;
