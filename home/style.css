@@ -20,7 +20,6 @@
 
 body {
   padding-top: 20px;
-  font-family: "Roboto", sans-serif;
   background-color: var(--bg-color);
   justify-content: center;
   display: flex;

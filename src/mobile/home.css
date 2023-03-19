@@ -1,18 +1,21 @@
 /* MOBILE ONLY */
-@media (pointer:coarse) {
-    body {
-        zoom: 1;
-    }
+@media (pointer: coarse) {
+  body {
+    zoom: 1;
+  }
 
-    .grid .pc:after {
-        content: "PC ONLY" !important;
-        color: red
-      }
+  .grid .pc {
+    border: 1px red solid;
+  }
+
+  .grid .pc:after {
+    content: "PC ONLY" !important;
+    color: red;
+  }
 }
 
 @media (max-width: 620px) {
-    .box {
-        zoom: 0.5;
-    }
-
+  .box {
+    zoom: 0.5;
+  }
 }
