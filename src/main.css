@@ -40,8 +40,8 @@ body {
   transition: 1s;
 }
 
-@media (pointer: coarse) {
+/* @media (pointer: coarse) {
   *:hover {
     all: unset !important;
   }
-}
+} */
