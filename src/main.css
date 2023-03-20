@@ -39,3 +39,9 @@ body {
   background: gray;
   transition: 1s;
 }
+
+@media (pointer: coarse) {
+  *:hover {
+    all: unset !important;
+  }
+}
