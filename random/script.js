@@ -4,7 +4,7 @@ const gameFolders = [
   "clickgame",
   "cookie",
   "football",
-  "squarerunner",
+  "colorrun",
 ];
 
 function randomIntFromInterval(min, max) {

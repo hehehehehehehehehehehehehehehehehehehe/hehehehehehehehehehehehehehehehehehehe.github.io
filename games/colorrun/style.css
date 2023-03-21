@@ -1,0 +1,101 @@
+@import url(../../src/main.css);
+@import url(../../src/text.css);
+@import url(../header.css);
+
+div#gameOverlay {
+  background-color: rgb(31, 160, 31);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 750px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 700%;
+  justify-content: center;
+  align-items: center;
+}
+
+div#gameOverlay h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+div#game {
+  background-color: rgb(39, 83, 94);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 750px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  border-color: gray;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+div#path {
+  width: 100%;
+  height: 25%;
+  background-color: transparent;
+  border-color: rgb(31, 31, 31);
+  border-width: 0.5px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+}
+
+div.player {
+  width: 70px;
+  aspect-ratio: 1;
+  display: flex;
+  margin-left: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+#player1 {
+  background-color: red;
+}
+
+#player2 {
+  background-color: lime;
+}
+
+#player3 {
+  background-color: royalblue;
+}
+
+#player4 {
+  background-color: yellow;
+}
+
+/* slider */
+input#widthSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10vw;
+  height: 25px;
+  background: var(--bg-color);
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input#widthSlider:hover {
+  cursor: pointer;
+}
