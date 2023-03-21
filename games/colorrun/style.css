@@ -66,6 +66,9 @@ div.player {
   justify-content: center;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;
+  border-color: var(--bg-color);
+  border-width: 1px;
+  border-style: solid;
 }
 
 #player1 {
@@ -98,4 +101,9 @@ input#widthSlider {
 
 input#widthSlider:hover {
   cursor: pointer;
+}
+
+p#playerName {
+  color: var(--bg-color);
+  font-size: 200%;
 }
