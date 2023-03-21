@@ -61,6 +61,14 @@
     color: aliceblue;
     position: absolute;
     top: -7.5%;
-    right: 6%;
-    font-size: 150%; 
+    right: 8%;
+    font-size: 150%;
+}
+
+#score {
+    color: aliceblue;
+    position: absolute;
+    top: -13%;
+    font-size: 150%;
+    zoom: 150%;
 }
