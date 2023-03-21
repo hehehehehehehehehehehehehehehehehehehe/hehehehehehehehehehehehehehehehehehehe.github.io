@@ -20,18 +20,19 @@ function start() {
   startDiv.style.zIndex = "-1";
   setTimeout(timerEnd, timeleft);
   cursor.style.left =
-    Math.floor((Math.random() * aimField.offsetWidth) / 2) + "px";
+    Math.floor((Math.random() * aimField.offsetWidth) / 2 + 2) + "px";
   cursor.style.top =
-    Math.floor((Math.random() * aimField.offsetHeight) / 2) + "px";
+    Math.floor((Math.random() * aimField.offsetHeight) / 2 + 2) + "px";
   gamegoeson = true;
 }
 
 function click() {
   score += 1;
   cursor.style.left =
-    Math.floor((Math.random() * aimField.offsetWidth) / 2) + "px";
+    Math.floor((Math.random() * aimField.offsetWidth) / 2 + 2) + "px";
   cursor.style.top =
-    Math.floor((Math.random() * aimField.offsetHeight) / 2) + "px";
+    Math.floor((Math.random() * aimField.offsetHeight) / 2 + 2) + "px";
+  document.getElementById("score").innerHTML = score;
 }
 
 function timerEnd() {
@@ -46,15 +47,15 @@ function timerEnd() {
   timeleft = 20000;
   startDiv.style.zIndex = "2";
   gamegoeson = false;
+  document.getElementById("score").innerHTML = 0;
 }
 
 setInterval(() => {
   if (gamegoeson == true) {
-    timeleft -= 4;
+    timeleft -= 8;
   }
 
   timeleft2 = timeleft / 1000;
 
-  document.getElementById("time").innerHTML =
-    "Time left: " + timeleft2.toFixed(1);
-}, 1);
+  document.getElementById("time").innerHTML = "Time left: " + timeleft2.toFixed(1);
+}, 8);
