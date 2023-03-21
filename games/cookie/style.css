@@ -4,158 +4,155 @@
 @import url(../../src/mobile/cookie.css);
 
 body {
-    background-color: var(--bg-color);
-    overflow: hidden;
-    cursor: default;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  cursor: default;
 }
 
 .matchfield {
-    transform: translate(-50%, -50%);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 1200px;
-    height: 600px;
-    background-color: rgb(80, 165, 165);
-    border-radius: 10px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1200px;
+  height: 600px;
+  background-color: rgb(80, 165, 165);
+  border-radius: 10px;
 }
 
 #clicker {
-    transform: translate(-50%, -50%);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    image-rendering: pixelated;
-    zoom: 5;
-    display: block;
-    margin: 0 auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  image-rendering: pixelated;
+  zoom: 5;
+  display: block;
+  margin: 0 auto;
 }
 
 #hand {
-    transform: translate(-50%, -50%);
-    position: relative;
-    left: 51%;
-    top: 70%;
-    background-image: url('pics/punching_fist.png');
-    image-rendering: pixelated;
-    position: relative;
-    width: 120px;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 2;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 51%;
+  top: 70%;
+  background-image: url("pics/punching_fist.png");
+  image-rendering: pixelated;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
-#hand:hover{
-    cursor: pointer;
+#hand:hover {
+  cursor: pointer;
 }
 
 #hand:active {
-    background-image: url('pics/punching_fist_hit.png');
+  background-image: url("pics/punching_fist_hit.png");
 }
 
 .clicked {
-    background-image: url('pics/punching_fist_hit.png');
-    image-rendering: pixelated;
+  background-image: url("pics/punching_fist_hit.png");
+  image-rendering: pixelated;
 }
 
 #newMachine {
-    transform: translate(-50%, -50%);
-    position: relative;
-    left: 50%;
-    top: 10%;
-    image-rendering: pixelated;
-    display: block;
-    margin: 0 auto;
-    width: 250px;
-    content: url(pics/new_machine.png);
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 10%;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  content: url(pics/new_machine.png);
 }
 
-#newMachine:hover{
-    cursor: pointer;
+#newMachine:hover {
+  cursor: pointer;
 }
 
-#newMachine:active{
-    content: url(pics/new_machine_clicked.png);
+#newMachine:active {
+  content: url(pics/new_machine_clicked.png);
 }
 
 #newMachine.disabled {
-    content: url(pics/new_machine_locked.png);
+  content: url(pics/new_machine_locked.png);
 }
 
 #upgradeMachine {
-    transform: translate(-50%, -50%);
-    position: relative;
-    left: 50%;
-    top: 7%;
-    image-rendering: pixelated;
-    display: block;
-    margin: 0 auto;
-    width: 340px;
-    content: url(pics/upgrade_machine.png);
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 7%;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto;
+  width: 340px;
+  content: url(pics/upgrade_machine.png);
 }
 
-#upgradeMachine:hover{
-    cursor: pointer;
+#upgradeMachine:hover {
+  cursor: pointer;
 }
 
-#upgradeMachine:active{
-    content: url(pics/upgrade_machine_clicked.png);
+#upgradeMachine:active {
+  content: url(pics/upgrade_machine_clicked.png);
 }
 
 #upgradeMachine.disabled {
-    content: url(pics/upgrade_machine_locked.png);
+  content: url(pics/upgrade_machine_locked.png);
 }
 
 #moneyRewardDiv {
-
-    height: 320px;
-    width: 150px;
-    position: absolute;
-    left: 300px;
-    top: 180px;
+  height: 320px;
+  width: 150px;
+  position: absolute;
+  left: 300px;
+  top: 180px;
 }
 
 #moneyRewardDiv2 {
-
-    height: 320px;
-    width: 150px;
-    position: absolute;
-    left: 750px;
-    top: 180px;
+  height: 320px;
+  width: 150px;
+  position: absolute;
+  left: 750px;
+  top: 180px;
 }
 
 #moneyReward {
-
-    color: rgb(255, 255, 255);
-    top: 5;
-    z-index: 1 !important;
+  color: rgb(255, 255, 255);
+  top: 5;
+  z-index: 1 !important;
 }
 
 #fistDiv {
-    height: 325px;
-    width: 205px;
-    position: absolute;
-    left:497.7px;
-    top: 175px;
+  height: 325px;
+  width: 205px;
+  position: absolute;
+  left: 497.7px;
+  top: 175px;
 }
 
 #moneyDisplay {
-    color: aliceblue;
-    background-color: rgb(114, 194, 194);
-    position: absolute;
-    z-index: 1;
+  color: aliceblue;
+  background-color: rgb(114, 194, 194);
+  position: absolute;
+  z-index: 1;
 }
 
 #moneyDisplay {
-    margin: 5%;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-width: 1px;
-    border-radius: 10px;
-    border-color:gray;
-    border-style: solid;
-    display: none;
+  margin: 5%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: gray;
+  border-style: solid;
+  display: none;
 }

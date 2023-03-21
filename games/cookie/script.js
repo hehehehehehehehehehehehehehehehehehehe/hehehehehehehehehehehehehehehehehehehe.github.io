@@ -11,6 +11,7 @@ let IncomeProperty4 = 86;
 let IncomeProperty5 = 96;
 let machineType = 1;
 let moneyValue = 0;
+let canBuyNewMachine = 0;
 
 // CUSTOM CURSOR
 var hand = document.getElementById("hand");
@@ -55,8 +56,10 @@ function click() {
   moneyReward.innerText = "+" + rewardValue.toFixed(2);
   moneyReward.id = "moneyReward";
   moneyReward.style.position = "absolute";
-  moneyReward.style.left = Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
-  moneyReward.style.top = Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
+  moneyReward.style.left =
+    Math.floor(Math.random() * moneyRewardDiv.offsetWidth) + "px";
+  moneyReward.style.top =
+    Math.floor(Math.random() * moneyRewardDiv.offsetHeight) + "px";
 
   if (rewardValue < 0.03) {
     moneyReward.style.color = "white";
@@ -96,16 +99,23 @@ let nextUpgradeValue = 5;
 
 setInterval(() => {
   const UM = document.getElementById("upgradeMachine");
-  if (moneyValue >= nextUpgradeValue) {
+  if (moneyValue >= nextUpgradeValue && canBuyNewMachine == 0) {
     UM.classList.remove("disabled");
   } else {
     UM.classList.add("disabled");
+  }
+
+  const NM = document.getElementById("newMachine");
+  if (moneyValue >= nextUpgradeValue && canBuyNewMachine == 1) {
+    NM.classList.remove("disabled");
+  } else {
+    NM.classList.add("disabled");
   }
 }, 200);
 
 let clicker = document.getElementById("clicker");
 function upgradeMachine() {
-  if (machineType == 1 && moneyValue >= 5) {
+  if (machineType == 1 && moneyValue >= 5 && canBuyNewMachine == 0) {
     moneyValue -= 5;
     IncomeProperty1 = 11;
     IncomeProperty2 = 31;
@@ -117,15 +127,17 @@ function upgradeMachine() {
     clicker.src = "./pics/candy_vending_machine_silver.png";
   }
 
-  if (machineType == 2 && moneyValue >= 10) {
+  if (machineType == 2 && moneyValue >= 10 && canBuyNewMachine == 0) {
     moneyValue -= 10;
     IncomeProperty1 = 6;
     IncomeProperty2 = 21;
     IncomeProperty3 = 41;
     IncomeProperty4 = 71;
     IncomeProperty5 = 91;
-    nextUpgradeValue = 999999999999999;
-    clicker.src = "./pics/candy_vending_machine_gold.png"
+    machineType = 3;
+    nextUpgradeValue = 100;
+    canBuyNewMachine = 1;
+    clicker.src = "./pics/candy_vending_machine_gold.png";
   }
 
   const MD = document.getElementById("moneyDisplay");
@@ -134,3 +146,22 @@ function upgradeMachine() {
 }
 
 upgradeMachine(); // text is hide without
+
+function newMachine() {
+  if (machineType == 3 && moneyValue >= 100 && canBuyNewMachine == 1) {
+    moneyValue -= 100;
+    // IncomeProperty1 = 6;
+    // IncomeProperty2 = 21;
+    // IncomeProperty3 = 41;
+    // IncomeProperty4 = 71;
+    // IncomeProperty5 = 91;
+    machineType = 4;
+    nextUpgradeValue = 99999;
+    canBuyNewMachine = 0;
+    clicker.src = "./pics/automat.png";
+  }
+
+  const MD = document.getElementById("moneyDisplay");
+  MD.style.display = "block";
+  MD.innerText = moneyValue.toFixed(2) + "€";
+}
