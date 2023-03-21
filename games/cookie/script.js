@@ -12,13 +12,14 @@ let IncomeProperty5 = 96;
 let machineType = 1;
 let moneyValue = 0;
 let canBuyNewMachine = 0;
+clickTimeValue = 1;
 
 // CUSTOM CURSOR
 var hand = document.getElementById("hand");
 
 document.addEventListener("mousedown", function (event) {
   if (event.target.id === "hand") {
-    click();
+    clicktime();
     hand.classList.add("clicked");
     const punchAudio = new Audio("sounds/punch.mp3");
     punchAudio.volume = 0.3;
@@ -29,6 +30,14 @@ document.addEventListener("mousedown", function (event) {
 document.addEventListener("mouseup", function () {
   hand.classList.remove("clicked");
 });
+
+function clicktime(){
+  click();
+
+  if (clickTimeValue > 1){
+    click();
+  }
+}
 
 function click() {
   moneyProperty = Math.floor(Math.random() * 100);
@@ -150,15 +159,17 @@ upgradeMachine(); // text is hide without
 function newMachine() {
   if (machineType == 3 && moneyValue >= 100 && canBuyNewMachine == 1) {
     moneyValue -= 100;
-    // IncomeProperty1 = 6;
-    // IncomeProperty2 = 21;
-    // IncomeProperty3 = 41;
-    // IncomeProperty4 = 71;
-    // IncomeProperty5 = 91;
+    IncomeProperty1 = 11;
+    IncomeProperty2 = 31;
+    IncomeProperty3 = 61;
+    IncomeProperty4 = 81;
+    IncomeProperty5 = 96;
+    clickTimeValue = 2;
     machineType = 4;
     nextUpgradeValue = 99999;
     canBuyNewMachine = 0;
-    clicker.src = "./pics/automat.png";
+    clicker.src = "./pics/cofee_vending.png";
+    clicker.style.zoom = 330 + '%';
   }
 
   const MD = document.getElementById("moneyDisplay");
