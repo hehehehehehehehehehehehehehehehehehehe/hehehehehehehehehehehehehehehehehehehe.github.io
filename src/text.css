@@ -1,23 +1,27 @@
 /* HELP TOOLTIP */
 
 .helpTextFootball:after {
-    content: "Help is coming soon.";
+  content: "Help is coming soon.";
 }
 
 .helpTextCookie:after {
-    content: "Press the fist to get money from the machines. You can also unlock new machines (press 'new machine' in the corner).";
+  content: "Press the fist to get money from the machines. You can also unlock new machines (press 'new machine' in the corner).";
 }
 
 .helpTextClickgame:after {
-    content: "Click the field as fast as you can and see your results after a few seconds.";
+  content: "Click the field as fast as you can and see your results after a few seconds.";
 }
 
 .helpTextChancegame:after {
-    content: "Test your luck by clicking the objects.";
+  content: "Test your luck by clicking the objects.";
 }
 
 .helpTextAimtrainer:after {
-    content: "Practice your aim by clicking on the aim point on the screen.";
+  content: "Practice your aim by clicking on the aim point on the screen.";
+}
+
+.helpTextColorrun:after {
+  content: "Press the keys on your keyboard to move your character and win by being first.";
 }
 
 /* ------------- */

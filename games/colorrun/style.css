@@ -9,10 +9,10 @@ div#gameOverlay {
   display: flex;
   flex-direction: column;
   width: 1000px;
-  height: 750px;
+  height: 80vh;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 57%;
   position: absolute;
   z-index: 1;
   color: white;
@@ -33,10 +33,10 @@ div#game {
   display: flex;
   flex-direction: column;
   width: 1000px;
-  height: 750px;
+  height: 80vh;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 57%;
   position: absolute;
   border-color: gray;
   border-width: 5px;
@@ -66,6 +66,9 @@ div.player {
   justify-content: center;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;
+  border-color: var(--bg-color);
+  border-width: 1px;
+  border-style: solid;
 }
 
 #player1 {
@@ -98,4 +101,9 @@ input#widthSlider {
 
 input#widthSlider:hover {
   cursor: pointer;
+}
+
+p#playerName {
+  color: var(--bg-color);
+  font-size: 200%;
 }

@@ -5,12 +5,12 @@
 div#board {
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 57%;
     position: absolute;
     display: flex;
     align-items: center;
     width: 75%;
-    aspect-ratio: 2;
+    height: 80vh;
     background-color: #485368;
     border-radius: 10px;
     border: solid;
