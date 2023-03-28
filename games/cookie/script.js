@@ -149,6 +149,30 @@ function upgradeMachine() {
     clicker.src = "./pics/candy_vending_machine_gold.png";
   }
 
+  if (machineType == 4 && moneyValue >= 15 && canBuyNewMachine == 0) {
+    moneyValue -= 15;
+    IncomeProperty1 = 11;
+    IncomeProperty2 = 31;
+    IncomeProperty3 = 61;
+    IncomeProperty4 = 81;
+    IncomeProperty5 = 96;
+    machineType = 5;
+    nextUpgradeValue = 30;
+    clicker.src = "./pics/cofee_vending_silver.png";
+  }
+
+  if (machineType == 5 && moneyValue >= 15 && canBuyNewMachine == 0) {
+    moneyValue -= 30;
+    IncomeProperty1 = 6;
+    IncomeProperty2 = 21;
+    IncomeProperty3 = 41;
+    IncomeProperty4 = 71;
+    IncomeProperty5 = 91;
+    machineType = 6;
+    nextUpgradeValue = 150;
+    clicker.src = "./pics/cofee_vending_gold.png";
+  }
+
   const MD = document.getElementById("moneyDisplay");
   MD.style.display = "block";
   MD.innerText = moneyValue.toFixed(2) + "€";
@@ -166,10 +190,11 @@ function newMachine() {
     IncomeProperty5 = 96;
     clickTimeValue = 2;
     machineType = 4;
-    nextUpgradeValue = 99999;
+    nextUpgradeValue = 15;
     canBuyNewMachine = 0;
     clicker.src = "./pics/cofee_vending.png";
     clicker.style.zoom = 330 + '%';
+    nextUpgradeValue = 30;
   }
 
   const MD = document.getElementById("moneyDisplay");
